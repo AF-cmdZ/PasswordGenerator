@@ -11,3 +11,4 @@ Link to live page:
 
 
 Screen shot:
+![password generator screen shot](assets/images/screen-shot.png "Password Generator")

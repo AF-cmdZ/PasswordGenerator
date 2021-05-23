@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+:root {
+  --darkTeal: #296073;
+  --sea: #5F93A7;
+  --aqua: #C4F9FF;
+  --banana: #F9F871;
+  --parchment: #F1F1E6;
+}
+
 html,
 body,
 .wrapper {
@@ -13,8 +21,8 @@ body,
 }
 
 body {
-  font-family: sans-serif;
-  background-color: #f9fbfd;
+  font-family: 'Raleway', sans-serif;
+  background-color: var(--darkTeal);;
 }
 
 .wrapper {
@@ -27,26 +35,40 @@ header {
   text-align: center;
   padding: 20px;
   padding-top: 0px;
-  color: hsl(206, 17%, 28%);
+}
+
+h1 {
+  color: var(--sea);
+  font-size: 3.5em;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Raleway', sans-serif;
 }
 
 .card {
-  background-color: hsl(0, 0%, 100%);
+  background-color: var(--sea);
   border-radius: 5px;
   border-width: 1px;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
-  color: hsl(206, 17%, 28%);
-  font-size: 18px;
+  box-shadow: 5px 5px 18px #0e1f25;
   margin: 0 auto;
   max-width: 800px;
   padding: 30px 40px;
+}
+
+h2 {
+  color: white;
+  font-size: 2em;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  letter-spacing: 1.1px;
 }
 
 .card-header::after {
   content: " ";
   display: block;
   width: 100%;
-  background: #e7e9eb;
+  background: var(--darkTeal);
   height: 2px;
 }
 
@@ -62,7 +84,7 @@ header {
   content: " ";
   display: block;
   width: 100%;
-  background: #e7e9eb;
+  background: var(--darkTeal);
   height: 2px;
 }
 
@@ -74,11 +96,9 @@ header {
 
 .btn {
   border: none;
-  background-color: hsl(360, 91%, 36%);
+  background-color: var(--banana);
   border-radius: 25px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
-    0px;
-  color: hsl(0, 0%, 100%);
+  color: var(--darkTeal);
   display: inline-block;
   font-size: 22px;
   line-height: 22px;
@@ -86,6 +106,9 @@ header {
   padding: 14px 34px;
   text-align: center;
   cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  letter-spacing: 1.2px;
 }
 
 button[disabled] {
@@ -112,7 +135,6 @@ button[disabled] {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
-  border: 2px dashed #c0c7cf;
   border-radius: 6px;
   resize: none;
   overflow: hidden;
@@ -133,5 +155,8 @@ button[disabled] {
 @media (max-width: 500px) {
   .btn {
     font-size: 0.8rem;
+  }
+  h1 {
+    font-size: 2.5em;
   }
 }
