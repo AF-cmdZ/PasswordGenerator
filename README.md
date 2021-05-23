@@ -7,7 +7,7 @@ Password Generator project
 description: 
 An application that enables the user to generate random passwords based on criteria that they’ve selected.
 
-Link to live page:
+Link to live page: https://af-cmdz.github.io/PasswordGenerator/
 
 
 Screen shot:
